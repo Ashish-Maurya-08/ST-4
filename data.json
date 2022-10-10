@@ -1,20 +1,7 @@
 {
   "data": [
     {
-      "id": "ashish",
-      "pass": "okay"
-    },
-    {
-      "id": "bott",
-      "pass": "okat"
-    },
-    {
       "id": "Ash",
-      "pass": "Maurya"
-    },
-    {
-      "id": "Ashish",
-      "email": "ashish@gmail.com",
       "pass": "Maurya"
     },
     {
@@ -23,17 +10,25 @@
       "pass": "Cunt"
     },
     {
-      "id": "bruh",
-      "email": "okaybro",
-      "pass": "kooi"
-    },
-    {
       "id": "admin",
       "email": "admin",
       "pass": "admin"
+    },
+    {
+      "id": "msedge",
+      "email": "yahoo",
+      "pass": "Netflix"
+    },
+    {
+      "id": "crowd",
+      "email": "lonely",
+      "pass": "pass"
+    },
+    {
+      "id": "used",
+      "email": "pqwod",
+      "pass": "word"
     }
   ],
-  "user": {
-    "name": "admin"
-  }
+  "user": {}
 }

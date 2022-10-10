@@ -2,20 +2,21 @@ import './Nav.css';
 import logo from './logo.png';
 import {Link} from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 function Nav(props){
 
     const [user,setuser]=useState("Login");
 
     useEffect(()=>{
-        updateTag();
-    },[props.user])
-
-    const updateTag=()=>{
-        if(props.user){
-            setuser(props.user)
+        async function getUser(){
+            if(props.user){
+                setuser(props.user);  
+            }
+            else{
+                setuser("Login")
+            }
         }
-    }
+        getUser();
+    },[props.user])
 
     return(
         <>

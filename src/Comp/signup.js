@@ -16,16 +16,17 @@ export default function Signup(props) {
             return;
         }
 
-        axios.post("http://localhost:3001/data",{
+        axios.post(props.datalink,{
             "id":id,
             "email":email,
             "pass":pass
         }).then((res)=>{
             navigate("/");
         })
-        .catch((err)=>{alert("Some Error Occured!!")})
+        .catch((err)=>{alert("Some Error Occured!!");return})
 
-        axios.post("http://localhost:3001/user",{"name":id})
+        axios.post(props.userlink,{"name":id})
+        props.update(id);
     }
 
     return (

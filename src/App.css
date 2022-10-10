@@ -53,6 +53,7 @@
   width: calc(100%);
 }
 
+
 .button button{
   height: 2.5rem;
   background-color:#016FBE;
@@ -93,7 +94,7 @@ Maps{
 }
 
 .container{
-  height: 90vh;
+  height: 100%;
   padding-top: 3rem;
   overflow:scroll;
   width: 60%;

@@ -2,34 +2,38 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Admin(){
 
+export default function Admin(props){
+    const navigate=useNavigate();
     const [data,setdata]=useState([]);
+    const btn={
+        "marginTop":"2rem"
+    }
 
-    let navigate=useNavigate();
 
     useEffect(()=>{
         getData();
     },[]);
 
-    function getData(){
-        axios.get("http://localhost:3001/data")
-        .then((res)=>setdata(res.data))
-        .catch((err)=>console.log(err))
+    async function getData(){
+        let res=await axios.get(props.data)
+        setdata(res.data);
     }
 
     async function deletedata(id){
-        let res=await axios.delete(`http://localhost:3001/data/${id}`);
-        console.log(res);
+        await axios.delete(`http://localhost:5000/data/${id}`);
         getData();
+    }
+    const clearUser=()=>{
+        async function deleteUser() {
+            await axios.post(props.userlink, {})
+        }
+        deleteUser();
+        props.update();
+        navigate("/")
 
     }
 
-    
-    const clearData=(user)=>{
-        axios.post(`http://localhost:3001/user`,{})
-        navigate("/");
-    }
 
     return(
         <>
@@ -46,8 +50,8 @@ export default function Admin(){
                     </>
                 ))
             }
-            <div className="button textcenter" style={{"marginTop":"2rem"}} >
-            <button onClick={clearData}>Log Out</button>
+            <div className="button textcenter" style={btn} >
+            <button onClick={clearUser}>Log Out</button>
             </div>
         </div>
         </>

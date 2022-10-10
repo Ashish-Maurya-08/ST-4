@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": "ashish",
+      "pass": "okay"
+    },
+    {
+      "id": "bott",
+      "pass": "okat"
+    },
+    {
+      "id": "Ash",
+      "pass": "Maurya"
+    },
+    {
+      "id": "Ashish",
+      "email": "ashish@gmail.com",
+      "pass": "Maurya"
+    },
+    {
+      "id": "Boii",
+      "email": "crazy",
+      "pass": "Cunt"
+    },
+    {
+      "id": "bruh",
+      "email": "okaybro",
+      "pass": "kooi"
+    },
+    {
+      "id": "admin",
+      "email": "admin",
+      "pass": "admin"
+    }
+  ],
+  "user": {
+    "name": "admin"
+  }
+}

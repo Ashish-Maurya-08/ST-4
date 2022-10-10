@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+
+.main{
+  height: 90vh;
+  width: 100%;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form{
+  width: 50%;
+  height: auto;
+  font-size: calc(10px + 1vmin);
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.form div{
+  padding:0.8rem 0;
+}
+
+
+.form button{
+  height: 2.5rem;
+  background-color:#016FBE;
+  color:white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  width: calc(100%);
+}
+
+.button button{
+  height: 2.5rem;
+  background-color:#016FBE;
+  color:white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  width: calc(80px + 5vmin);
+}
+
+.form form{
+  width: calc(45vmin);
+  align-items: center;
+}
+
+.form input{
+  
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  border-bottom:2px solid aquamarine;
+  width: 100%;
+  outline: none;
+  color:azure;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  
+}
+
+Maps{
+  width: 50%;
+}
+
+.about{
+  width: 50%;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.container{
+  height: 90vh;
+  padding-top: 3rem;
+  overflow:scroll;
+  width: 60%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+
+.container div{
+  width: 70%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.textcenter{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding-bottom:2rem ;
+}

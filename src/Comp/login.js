@@ -2,7 +2,6 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import $ from "jquery";
 import React, { useEffect, useState } from "react";
-import Admin from './admin';
 export default function Login(props) {
 
     const signupLink = {
@@ -26,6 +25,7 @@ export default function Login(props) {
         e.preventDefault();
         setid($("#id").val());
         setpass($("#pass").val());
+
     }
 
     useEffect(() => {
@@ -79,7 +79,7 @@ export default function Login(props) {
             setuser(data.data.name);
         }
         fetchuser();
-    }, []);
+    },[]);
 
 
 
@@ -87,6 +87,8 @@ export default function Login(props) {
     if(user==="admin"){
         navigate("/admin")
     }
+
+    // 
 
     return (
         <>{!user ?( 

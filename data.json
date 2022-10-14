@@ -1,10 +1,6 @@
 {
   "data": [
     {
-      "id": "Ash",
-      "pass": "Maurya"
-    },
-    {
       "id": "Boii",
       "email": "crazy",
       "pass": "Cunt"
@@ -25,10 +21,12 @@
       "pass": "pass"
     },
     {
-      "id": "used",
-      "email": "pqwod",
-      "pass": "word"
+      "id": "grwrgfgfwdsdd",
+      "email": "djkfkbs",
+      "pass": "dsds"
     }
   ],
-  "user": {}
+  "user": {
+    "name": "admin"
+  }
 }
